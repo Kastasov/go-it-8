@@ -965,8 +965,7 @@ svg {
   top: 0;
   right: 0;
   width: 100%;
-  max-height: 760px;
-  height: 100%;
+  height: 100vh;
   z-index: 10;
   background-color: var(--background-white);
   -webkit-transform: translateX(100%);
@@ -978,8 +977,18 @@ svg {
 }
 .mobile-menu__container {
   position: relative;
-  max-width: 480px;
-  width: 100%;
+  max-width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   padding: 48px 40px;
@@ -991,14 +1000,6 @@ svg {
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
-  }
-}
-.mobile-menu__nav--position {
-  margin-bottom: 300px;
-}
-@media screen and (max-width: 480px) {
-  .mobile-menu__nav--position {
-    margin-bottom: 200px;
   }
 }
 .mobile-menu__li:not(:last-child) {
@@ -1101,7 +1102,7 @@ svg {
   font-size: 18px;
   color: var(--accent-color);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 4790px) {
   .mobile-socials {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1110,7 +1111,7 @@ svg {
 .mobile-socials__item {
   border: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .mobile-socials__item {
     width: calc((100% - 60px) / 2);
     min-width: 130px;

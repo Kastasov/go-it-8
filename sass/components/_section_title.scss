@@ -1,0 +1,19 @@
+
+.section-title {
+    font-size: 28px;
+    line-height: 1.2;
+    color: var(--header-color);
+
+
+    @media screen and (min-width:1200px) {
+
+        font-size: 36px;
+    }
+
+
+    &__position {
+        margin-bottom: 30px;
+        @media screen and (min-width:1200px) {
+        margin-bottom: 50px;}
+    }
+}

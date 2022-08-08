@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WebStudio</title>
+    <link rel="icon" href="./images/fav-icon/favicon.ico" />
+    <!-- font add-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- оголошення майбутньго підключення-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+   <!-- <link rel="stylesheet" href="./css/modern-normalize.css" /> -->
+   <link rel="stylesheet" href="./css/main.min.css" />
+
+    
+  </head>
+  <body class="body">
+
+
+     <header class="header">
+      <div class="container container__header">
+        <nav class="nav">
+          <a href="./index.html" lang="en" class="logo"
+            ><span class="logo__highlight"> Web</span>Studio</a
+          >
+          <ul class="header-menu header-menu__position">
+            <li class="header-menu__item">
+              <a href="./index.html" class="header-menu__link">Студия</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="./poftfolio.html" class="header-menu__link header-menu__link--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-menu__item">
+              <a href="#" class="header-menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+
+                 <!-- mobile menu input begin -->
+         <button type="button" class="mobile-menu__open-button js-open-menu"  aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="mobile-menu__icon">
+                  <use href="./images/logo/icons.svg#icon-mob_menu_40px"></use>
+                </svg>
+                         </button>
+        
+        <div class="mobile-menu js-menu-container " id="mobile-menu">
+          <div class="mobile-menu__container">
+          <button type="button" class="mobile-menu__close-button js-close-menu "  >
+              <svg class="mobile-menu__icon">
+                  <use href="./images/logo/icons.svg#icon-close_40px"></use>
+                </svg>
+                         </button>
+          </button>
+
+          <ul class="mobile-menu__nav mobile-menu__nav--position">
+              <li class="mobile-menu__li">
+                <a href="./index.html" class="mobile-menu__link mobile-menu__current "
+                  >Студия</a>
+              </li>
+              <li class="mobile-menu__li">
+                <a href="./poftfolio.html" class="mobile-menu__link">Портфолио</a>
+              </li>
+              <li class="mobile-menu__li">
+                <a href="#" class="mobile-menu__link">Контакты</a>
+              </li>
+          </ul>
+          <ul class="mobile-menu__cont">
+            
+              <li class="mobile-menu__li">
+                <a href="tel:+380961111111" class="mobile-menu__phone"> +38 096 111 11 11 </a>
+              </li>
+              <li class="mobile-menu__li">
+                <a href="mailto:info@devstudio.com" lang="en" class="mobile-menu__mail">
+                  info@devstudio.com
+                </a>
+              </li>
+           </ul>
+            <!-- socials -->
+            <ul class="mobile-socials">
+              <li class="mobile-socials__item">
+                <a class="mobile-socials__link " href="#">Instagram </a>
+              </li>
+              <li class="mobile-socials__item">
+                <a class="mobile-socials__link " href="#">Twitter </a>
+              </li>
+              <li class="mobile-socials__item">
+                <a class="mobile-socials__link " href="#">Facebook </a>
+              </li>
+              <li class="mobile-socials__item">
+                <a class="mobile-socials__link " href="#">LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+          <!-- mobile menu input end -->
+
+        <div class="header-kontakt__position">
+          <ul class="header-kontakt">
+            <li class="header-kontakt__item">
+              <a href="mailto:info@devstudio.com" lang="en" class="header-kontakt__link">
+                <svg class="header-kontakt__logo header-kontakt__logo--mail">
+                  <use href="./images/logo/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header-kontakt__item">
+              <a href="tel:+380961111111" class="header-kontakt__link">
+                <svg class="header-kontakt__logo header-kontakt__logo--phone">
+                  <use href="./images/logo/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">страница с портфолио</h1>
+      <!--скрыть-->
+
+      <section class="section">
+        <!-- buttons-->
+        <div class="container">
+          <ul class="filter  filter__margin ">
+            <li class="filter__item">
+              <button type="button" class="filter__button filter__button--active">Все</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- project samples-->
+          <div class="projects projects__margin">
+            <ul class="projects__list">
+              <li class="card card__margin ">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <picture>
+                <source srcset="./images/portfolio/technokryak_450@2.webp 2x,
+                  ./images/portfolio/technokryak_450.webp 1x"
+                   media="(max-width: 767px)" type="image/webp"> 
+                <source srcset="./images/portfolio/technokryak_450@2.jpg 2x,
+                  ./images/portfolio/technokryak_450.jpg 1x"
+                   media="(max-width: 767px)">
+                   <source srcset="./images/portfolio/technokryak_354@2.webp 2x,
+                  ./images/portfolio/technokryak_354.webp 1x"
+                  media="(max-width: 1199px)" type="image/webp">  
+                 <source srcset="./images/portfolio/technokryak_354@2.jpg 2x,
+                  ./images/portfolio/technokryak_354.jpg 1x"
+                  media="(max-width: 1199px)"> 
+                 <source srcset="./images/portfolio/technokryak@2.webp 2x,
+                  ./images/portfolio/technokryak.webp 1x" 
+                  media="(min-width: 1200px)" type="image/webp"> 
+                 <source srcset="./images/portfolio/technokryak@2.jpg 2x,
+                  ./images/portfolio/technokryak.jpg 1x"
+                  media="(min-width: 1200px)"> 
+                    <img class="card__image" src="./images/portfolio/technokryak.jpg" alt="скрин сайта компании Технокряк" />
+                    </picture>
+
+                    <div class="card__overlay">
+                      <p>
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card__borders">
+                    <h3 class="card__title">Технокряк</h3>
+                    <p class="card__type">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card card__margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <picture>
+                <source srcset="./images/portfolio/basketgame_450@2.webp 2x,
+                  ./images/portfolio/basketgame_450.webp 1x"
+                   media="(max-width: 767px)" type="image/webp"> 
+                <source srcset="./images/portfolio/basketgame_450@2.jpg 2x,
+                  ./images/portfolio/basketgame_450.jpg 1x"
+                   media="(max-width: 767px)">
+                   <source srcset="./images/portfolio/basketgame_354@2.webp 2x,
+                  ./images/portfolio/basketgame_354.webp 1x"
+                  media="(max-width: 1199px)" type="image/webp">  
+                 <source srcset="./images/portfolio/basketgame_354@2.jpg 2x,
+                  ./images/portfolio/basketgame_354.jpg 1x"
+                  media="(max-width: 1199px)"> 
+                 <source srcset="./images/portfolio/basketgame@2.webp 2x,
+                  ./images/portfolio/basketgame.webp 1x" 
+                  media="(min-width: 1200px)" type="image/webp"> 
+                 <source srcset="./images/portfolio/basketgame@2.jpg 2x,
+                  ./images/portfolio/basketgame.jpg 1x"
+                  media="(min-width: 1200px)"> 
+                    <img class="card__image"
+                      src="./images/portfolio/basketgame.jpg"
+                      alt="момент противоборства игроков двух команд"
+                    />
+                    </picture>
+                    <div class="card__overlay">
+                      <p>
+                        В баскетбол играют две команды, каждая из которых состоит из пяти полевых
+                        игроков (замены не ограничены). Цель каждой команды — забросить мяч в кольцо
+                        с сеткой (корзину) соперника и помешать другой команде завладеть мячом и
+                        забросить его в свою корзину. Корзина находится на высоте 3,05 м от паркета
+                        (10 футов).
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card__borders">
+                    <h3 class="card__title">Постер New Orlean vs Golden Star</h3>
+                    <p class="card__type">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card card__margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <picture>
+                <source srcset="./images/portfolio/imgseafood_450@2.webp 2x,
+                  ./images/portfolio/imgseafood_450.webp 1x"
+                   media="(max-width: 767px)" type="image/webp"> 
+                <source srcset="./images/portfolio/imgseafood_450@2.jpg 2x,
+                  ./images/portfolio/imgseafood_450.jpg 1x"
+                   media="(max-width: 767px)">
+                   <source srcset="./images/portfolio/imgseafood_354@2.webp 2x,
+                  ./images/portfolio/imgseafood_354.webp 1x"
+                  media="(max-width: 1199px)" type="image/webp">  
+                 <source srcset="./images/portfolio/imgseafood_354@2.jpg 2x,
+                  ./images/portfolio/imgseafood_354.jpg 1x"
+                  media="(max-width: 1199px)"> 
+                 <source srcset="./images/portfolio/imgseafood@2.webp 2x,
+                  ./images/portfolio/imgseafood.webp 1x" 
+                  media="(min-width: 1200px)" type="image/webp"> 
+                 <source srcset="./images/portfolio/imgseafood@2.jpg 2x,
+                  ./images/portfolio/imgseafood.jpg 1x"
+                  media="(min-width: 1200px)"> 
+                    <img class="card__image" src="./images/portfolio/imgseafood.jpg" alt="логотип ресторана морепродуктов" />
+                    </picture>
+                    <div class="card__overlay">
+                      <p>
+                        Симптомы отравления могут начаться через 2–8 часов после употребления рыбы.
+                        Спазмы в животе, тошнота и диарея продолжаются от 6 до 17 часов, после чего
+                        могут развиться зуд, парестезии, головная боль, миалгия, извращение тепловой
+                        и холодовой чувствительности, боль в области лица.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card__borders">
+                    <h3 class="card__title">Ресторан Seafood</h3>
+                    <p class="card__type">Приложение</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card card__margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+
+                     <picture>
+                <source srcset="./images/portfolio/imgheadphones_450@2.webp 2x,
+                  ./images/portfolio/imgheadphones_450.webp 1x"
+                   media="(max-width: 767px)" type="image/webp"> 
+                <source srcset="./images/portfolio/imgheadphones_450@2.jpg 2x,
+                  ./images/portfolio/imgheadphones_450.jpg 1x"
+                   media="(max-width: 767px)">
+                   <source srcset="./images/portfolio/imgheadphones_354@2.webp 2x,
+                  ./images/portfolio/imgheadphones_354.webp 1x"
+                  media="(max-width: 1199px)" type="image/webp">  
+                 <source srcset="./images/portfolio/imgheadphones_354@2.jpg 2x,
+                  ./images/portfolio/imgheadphones_354.jpg 1x"
+                  media="(max-width: 1199px)"> 
+                 <source srcset="./images/portfolio/imgheadphones@2.webp 2x,
+                  ./images/portfolio/imgheadphones.webp 1x" 
+                  media="(min-width: 1200px)" type="image/webp"> 
+                 <source srcset="./images/portfolio/imgheadphones@2.jpg 2x,
+                  ./images/portfolio/imgheadphones.jpg 1x"
+                  media="(min-width: 1200px)"> 
+                    <img class="card__image" src="./images/portfolio/imgheadphones.jpg" alt="головные 
+                    мониторы" />
+                     </picture>                    
+                    <div class="card__overlay">
+                      <p>
+                        В наушниках часто возникает ощущение, что источник звука находится где-то
+                        внутри головы.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card__borders">
+                    <h3 class="card__title">Проект Prime</h3>
+                    <p class="card__type">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card card__margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                       <picture>
+                <source srcset="./images/portfolio/imgboxes_450@2.webp 2x,
+                  ./images/portfolio/imgboxes_450.webp 1x"
+                   media="(max-width: 767px)" type="image/webp"> 
+                <source srcset="./images/portfolio/imgboxes_450@2.jpg 2x,
+                  ./images/portfolio/imgboxes_450.jpg 1x"
+                   media="(max-width: 767px)">
+                   <source srcset="./images/portfolio/imgboxes_354@2.webp 2x,
+                  ./images/portfolio/imgboxes_354.webp 1x"
+                  media="(max-width: 1199px)" type="image/webp">  
+                 <source srcset="./images/portfolio/imgboxes_354@2.jpg 2x,
+                  ./images/portfolio/imgboxes_354.jpg 1x"
+                  media="(max-width: 1199px)"> 
+                 <source srcset="./images/portfolio/imgboxes@2.webp 2x,
+                  ./images/portfolio/imgboxes.webp 1x" 
+                  media="(min-width: 1200px)" type="image/webp"> 
+                 <source srcset="./images/portfolio/imgboxes@2.jpg 2x,
+                  ./images/portfolio/imgboxes.jpg 1x"
+                  media="(min-width: 1200px)"> 
+                    <img class="card__image" src="./images/portfolio/imgboxes.jpg" alt="крафтовые упаковки" />
+                       </picture>
+                    <div class="card__overlay">
+                      <p>только лучшие упаковки - скроют секреты и сохранят Ваши сокровища</p>
+                    </div>
+                  </div>
+                  <div class="card__borders">
+                    <h3 class="card__title">Проект Boxes</h3>
+                    <p class="card__type">Приложение</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card card__margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+
+                    <picture>
+                <source srcset="./images/portfolio/imgworldwide_450@2.webp 2x,
+                  ./images/portfolio/imgworldwide_450.webp 1x"
+                   media="(max-width: 767px)" type="image/webp"> 
+                <source srcset="./images/portfolio/imgworldwide_450@2.jpg 2x,
+                  ./images/portfolio/imgworldwide_450.jpg 1x"
+                   media="(max-width: 767px)">
+                   <source srcset="./images/portfolio/imgworldwide_354@2.webp 2x,
+                  ./images/portfolio/imgworldwide_354.webp 1x"
+                  media="(max-width: 1199px)" type="image/webp">  
+                 <source srcset="./images/portfolio/imgworldwide_354@2.jpg 2x,
+                  ./images/portfolio/imgworldwide_354.jpg 1x"
+                  media="(max-width: 1199px)"> 
+                 <source srcset="./images/portfolio/imgworldwide@2.webp 2x,
+                  ./images/portfolio/imgworldwide.webp 1x" 
+                  media="(min-width: 1200px)" type="image/webp"> 
+                 <source srcset="./images/portfolio/imgworldwide@2.jpg 2x,
+                  ./images/portfolio/imgworldwide.jpg 1x"
+                  media="(min-width: 1200px)"> 
+
+                    <img class="card__image"
+                      src="./images/portfolio/imgworldwide.jpg"
+                      alt="сайт компании с глобальной картой присутсвия"
+                    />
+                    </picture>
+                    <div class="card__overlay">
+                      <p>
+                        Мары́ — город на юге Туркмении, названный в честь древнего города Мерв, центр
+                        Марыйского велаята. Второй по величине город современной Туркмении.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card__borders">
+                    <h3 class="card__title">Inspiration has no Borders</h3>
+                    <p class="card__type">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card card__margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+
+                    <picture>
+                <source srcset="./images/portfolio/imgmagazin_450@2.webp 2x,
+                  ./images/portfolio/imgmagazin_450.webp 1x"
+                   media="(max-width: 767px)" type="image/webp"> 
+                <source srcset="./images/portfolio/imgmagazin_450@2.jpg 2x,
+                  ./images/portfolio/imgmagazin_450.jpg 1x"
+                   media="(max-width: 767px)">
+                   <source srcset="./images/portfolio/imgmagazin_354@2.webp 2x,
+                  ./images/portfolio/imgmagazin_354.webp 1x"
+                  media="(max-width: 1199px)" type="image/webp">  
+                 <source srcset="./images/portfolio/imgmagazin_354@2.jpg 2x,
+                  ./images/portfolio/imgmagazin_354.jpg 1x"
+                  media="(max-width: 1199px)"> 
+                 <source srcset="./images/portfolio/imgmagazin@2.webp 2x,
+                  ./images/portfolio/imgmagazin.webp 1x" 
+                  media="(min-width: 1200px)" type="image/webp"> 
+                 <source srcset="./images/portfolio/imgmagazin@2.jpg 2x,
+                  ./images/portfolio/imgmagazin.jpg 1x"
+                  media="(min-width: 1200px)"> 
+
+                <img class="team-member__pic" src="./images/portfolio/imgmagazin.jpg" alt="разворот журнала" />
+              </picture>
+
+
+                    
+                    <div class="card__overlay">
+                      <p>
+                        Хью Марстон Хефнер (англ. Hugh Marston Hefner; 9 апреля 1926, Чикаго — 27
+                        сентября 2017, Лос-Анджелес) — американский издатель, основатель и
+                        шеф-редактор журнала «Playboy», а также основатель компании «Playboy
+                        Enterprises».
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card__borders">
+                    <h3 class="card__title">Издание Limited Edition</h3>
+                    <p class="card__type">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card card__margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <picture>
+                <source srcset="./images/portfolio/imglabel_450@2.webp 2x,
+                  ./images/portfolio/imglabel_450.webp 1x"
+                   media="(max-width: 767px)" type="image/webp"> 
+                <source srcset="./images/portfolio/imglabel_450@2.jpg 2x,
+                  ./images/portfolio/imglabel_450.jpg 1x"
+                   media="(max-width: 767px)">
+                   <source srcset="./images/portfolio/imglabel_354@2.webp 2x,
+                  ./images/portfolio/imglabel_354.webp 1x"
+                  media="(max-width: 1199px)" type="image/webp">  
+                 <source srcset="./images/portfolio/imglabel_354@2.jpg 2x,
+                  ./images/portfolio/imglabel_354.jpg 1x"
+                  media="(max-width: 1199px)"> 
+                 <source srcset="./images/portfolio/imglabel@2.webp 2x,
+                  ./images/portfolio/imglabel.webp 1x" 
+                  media="(min-width: 1200px)" type="image/webp"> 
+                 <source srcset="./images/portfolio/imglabel@2.jpg 2x,
+                  ./images/portfolio/imglabel.jpg 1x"
+                  media="(min-width: 1200px)"> 
+                    <img class="card__image" src="./images/portfolio/imglabel.jpg" alt="стильная этикетка" />
+                    </picture>
+                    <div class="card__overlay">
+                      <p>
+                        тикетка (от фр. etiquette; также ярлык) — графический или текстовый знак,
+                        нанесённый в виде наклейки, бирки или талона на товар, экспонат
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card__borders">
+                    <h3 class="card__title">Проект LAB</h3>
+                    <p class="card__type">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="card card__margin">
+                <a href="#" class="card__link">
+                  <div class="card__over-container">
+                    <picture>
+                <source srcset="./images/portfolio/imgsitescreen_450@2.webp 2x,
+                  ./images/portfolio/imgsitescreen_450.webp 1x"
+                   media="(max-width: 767px)" type="image/webp"> 
+                <source srcset="./images/portfolio/imgsitescreen_450@2.jpg 2x,
+                  ./images/portfolio/imgsitescreen_450.jpg 1x"
+                   media="(max-width: 767px)">
+                   <source srcset="./images/portfolio/imgsitescreen_354@2.webp 2x,
+                  ./images/portfolio/imgsitescreen_354.webp 1x"
+                  media="(max-width: 1199px)" type="image/webp">  
+                 <source srcset="./images/portfolio/imgsitescreen_354@2.jpg 2x,
+                  ./images/portfolio/imgsitescreen_354.jpg 1x"
+                  media="(max-width: 1199px)"> 
+                 <source srcset="./images/portfolio/imgsitescreen@2.webp 2x,
+                  ./images/portfolio/imgsitescreen.webp 1x" 
+                  media="(min-width: 1200px)" type="image/webp"> 
+                 <source srcset="./images/portfolio/imgsitescreen@2.jpg 2x,
+                  ./images/portfolio/imgsitescreen.jpg 1x"
+                  media="(min-width: 1200px)"> 
+                    <img class="card__image" src="./images/portfolio/imgsitescreen.jpg" alt="скрин заглавной страници сайта" />
+                    </picture>
+                    <div class="card__overlay">
+                      <p>
+                        «Пароль „Рыба-меч“» (англ. «Swordfish») — американский триллер 2001 года.
+                        Режиссёр — Доминик Сена. В главных ролях — Хью Джекман, Джон Траволта, Хэлли
+                        Берри и Дон Чидл.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card__borders">
+                    <h3 class="card__title">Growing Business</h3>
+                    <p class="card__type">Приложение</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+   <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__kontakt">
+            <a href="./index.html" lang="en" class="logo logo--footer"
+              ><span class="logo__highlight"> Web</span>Studio</a
+            >
+            <address class="adress adress__margin">
+              <ul class="adress__list">
+                <li class="adress__item">
+                  <a  class="adress__phis"
+                    href="https://goo.gl/maps/paLrzJ1DZaffjFaJ6"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    г. Киев, пр-т Леси Украинки, 26
+                  </a>
+                </li>
+                <li class="adress__item">
+                  <a href="mailto:info@devstudio.com" lang="en" class="adress__call"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="adress__item">
+                  <a href="tel:+380991111111" class="adress__call">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="socials--footer">
+            <p class="socials__title--footer">присоединяйтесь</p>
+              <ul class="socials__list socials__list--footer">
+                <li class="socials__item">
+                  <a class="socials__link socials__link--footer" 
+                   href="#">
+                    <svg class="socials__logo socials__logo--footer">
+                      <use href="./images/logo/icons.svg#icon-soc-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--footer" href="#">
+                    <svg class="socials__logo socials__logo--footer">
+                      <use href="./images/logo/icons.svg#icon-soc-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--footer" href="#">
+                    <svg class="socials__logo socials__logo--footer" >
+                      <use href="./images/logo/icons.svg#icon-soc-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link socials__link--footer" href="#">
+                    <svg class="socials__logo socials__logo--footer">
+                      <use href="./images/logo/icons.svg#icon-soc-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            
+          </div>
+
+          <div class="subscribe footer__subscribe_position">
+            <p class="subscribe__title">Подпишитесь на рассылку</p>
+
+            <form class="subscribe__form">
+            <label for="subscibe-email"></label>
+            <input type="email" name="subscibe-email" id="subscibe-email" class="subscribe__input"
+            placeholder="E-mail"/>
+            <button type="submit" class="button subscribe__button">
+                Подписаться
+                <svg class="subscribe__icon">
+                  <use href="./images/logo/icons.svg#icon-subscribe-icon"></use>
+                </svg>
+            </button>
+            </form>
+          </div>
+        </div>
+
+          
+        </div>
+      </div>
+    </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile.js"></script>
+  </body>
+</html>

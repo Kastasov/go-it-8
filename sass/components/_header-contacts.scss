@@ -1,0 +1,75 @@
+.header-kontakt {
+    display: none;
+    color: var(--header-contact-color);
+    align-items: center;
+
+    @media screen and (min-width:768px) {
+    display: block;
+       
+         @media screen and (min-width:1200px) {
+            display: flex;
+        }
+    }
+
+    &__position {
+        
+        margin-left: auto;
+        @media screen and (max-width:767px) {
+            display: none;
+            
+        }
+    }
+
+
+
+    &__item:nth-child(2) {
+        
+        @media screen and (min-width:1200px) {
+            margin-left: 50px;
+        }
+        
+
+    }
+
+    &__logo {
+        margin-right: 10px;
+        fill: currentColor;
+
+        &--mail {
+            width: 16px;
+            height: 12px;
+        }
+
+        &--phone {
+            width: 10px;
+            height: 16px;
+        }
+    }
+
+
+    &__link {
+
+        display: flex;
+        align-items: center;
+        min-width: 161px;
+        color: var(--header-contact-color);
+        text-decoration: none;
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: color 250ms var(--time-func);
+        
+
+        @media screen and (min-width:1200px) {
+        font-size: 14px;
+        }
+        
+       
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--accent-color);
+        }
+    }
+}

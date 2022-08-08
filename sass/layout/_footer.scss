@@ -1,0 +1,120 @@
+.footer {
+    background-color: var(--contrast-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    &__container {
+        text-align: center;
+        
+        
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        @media screen and (min-width:1200px) {
+            text-align: left;
+                        
+            align-items: baseline;
+        }
+
+    }
+
+    // &__kontakt {
+    //     // width: 230px;
+    //     // @media screen and (max-width:767px) {
+    //     //    text-align: center;
+    //     // }
+        
+    // }
+
+}
+
+.adress {
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.7;
+    
+
+    &__margin {
+        margin-top: 20px;
+    }
+    
+
+
+
+    // &__list {}
+
+    &__item:not(:first-child) {
+        margin-top: 9px;
+    }
+
+    &__call {
+        color: var(--footer-contact-color);
+        transition: color 250ms var(--time-func);
+    
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--accent-color);
+        }
+    }
+            
+    &__phis {
+        color: var(--light-color-for-dark-theme-logo);
+    }
+}
+/* footer socials */
+.socials {
+    &--footer {
+        @media screen and (max-width:767px) {
+                margin-top: 60px;
+            }
+
+        @media screen and (min-width:1200px) {
+            margin-left: 50px;
+        }
+    
+    }
+
+    &__title--footer {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--light-color-for-dark-theme-logo);
+    }
+
+    &__list--footer {
+        margin-top: 20px;
+    }
+
+    &__link--footer {
+        background-color: var(--footer-social-background);
+        color: var(--light-color-for-dark-theme-logo);
+        transition: background-color 250ms var(--time-func);
+
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+            outline: none;
+        }
+    }
+    &__logo--footer {
+        fill: currentcolor;
+    }
+
+}
+
+.footer__subscribe_position {
+    
+    margin-top: 60px;
+
+
+    @media screen and (min-width:1200px) {
+            margin-left: auto;
+            margin-top: 0;
+        }
+   }

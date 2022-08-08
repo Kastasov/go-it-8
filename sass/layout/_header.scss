@@ -1,0 +1,30 @@
+.container__header {
+    display: flex;
+    align-items: center;
+
+    height: 60px;
+    @media screen and (min-width:768px) {
+        height: 80px;
+    }
+}
+
+.header {
+    background-color: var(--background-white);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid var(--header-border);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+

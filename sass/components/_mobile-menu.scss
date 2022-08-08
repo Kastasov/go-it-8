@@ -1,0 +1,207 @@
+
+
+
+.mobile-menu {
+    display: block;
+    position: fixed;
+        top: 0;
+        right: 0;
+     
+        width: 100%;
+        max-height: 760px;
+        height: 100%;
+        
+        z-index: 10;
+    
+        background-color: var(--background-white);
+        transform: translateX(100%);
+        transition: transform 250ms;
+    &__container {
+        position: relative;
+        max-width: 480px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 48px 40px;
+       
+    }
+    &.is-open {
+        transform: translateX(0);
+        
+    }
+    @media screen and (max-width:480px) {
+                
+        }
+    @media screen and (min-width:768px) {
+        display: none;
+        }
+    
+    &__nav {
+
+    
+        
+        &--position {
+            margin-bottom: 300px;
+            @media screen and (max-width:480px) {
+            margin-bottom: 200px;
+            }
+        }
+    }
+    &__li {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+            @media screen and (max-width:480px) {
+            margin-bottom: 20px;
+            }
+        }
+
+    }
+    
+    &__link {
+        
+        font-size: 40px;
+        line-height: 1.15;
+        color: var(--header-color);
+        @media screen and (max-width:480px) {
+            font-size: 28px;
+        }
+                 &:hover,
+                 &:focus {
+                     color: var(--hover-accent-color);
+                     
+                 }
+    }
+    
+    &__cont {
+        margin-bottom: 60px;
+        @media screen and (max-width:480px) {
+        margin-bottom: 30px;
+        }
+    }
+     
+   
+     &__mail {
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--header-contact-color);
+        &:hover,
+            &:focus {
+                color: var(--hover-accent-color);
+            }
+     }
+     &__phone {
+        font-size: 34px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+        @media screen and (max-width:480px) {
+            font-size: 24px;
+        }
+
+        &:hover,
+        &:focus {
+                color: var(--hover-accent-color);
+                scale: 1.5;
+                 }
+
+     }
+        
+    // transition: opacity 250ms var(--time-func),
+    // visibility 250ms var(--time-func);
+    
+    &__open-button {
+        
+        
+        margin-left: auto;
+        padding: 0;
+        border: none;
+        background-color: var(--background-white);
+        fill:currentColor;
+        
+    
+        @media screen and (min-width:768px) {
+                  display: none;
+        }
+         &:hover,
+         &:focus {
+            color: var(--hover-accent-color);
+        }
+                      
+    }
+
+    &__current {
+            color: var(--accent-color);
+    }
+    &__close-button {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: none;
+        fill:currentColor;
+        
+        background: var(--background-white);
+        
+       
+        &:hover,
+        &:focus {
+            color: var(--hover-accent-color);
+        }
+    }   
+        
+       
+      
+    
+    &__icon {
+             width: 40px;
+             height: 40px;
+    }
+}
+.mobile-socials {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--accent-color);
+    @media screen and (max-width:480px) {
+            flex-wrap: wrap;
+            
+    
+        }
+
+    &__item {
+        border: none;
+       
+        @media screen and (max-width:480px) {
+            width: calc((100% - 60px) / 2);
+            min-width: 130px;
+            
+        
+    }
+        @media screen and (max-width:479px) {
+                padding: 10px;
+            }
+        &:not(:last-child) {
+            @media screen and (min-width:480px) and (max-width:767px) {
+                border-right:  1px solid var(--form-input-border);
+            }
+
+        } 
+                &:nth-child(odd) {
+                    text-align: end;
+                    border-right: 1px solid var(--form-input-border);
+                }
+    }
+
+    &__link {
+        padding: 10px;
+        &:hover,
+            &:focus {
+                color: var(--hover-accent-color);
+                font-weight: 700;
+            }
+       
+}
+}

@@ -44,10 +44,7 @@
     
         
         &--position {
-            // margin-bottom: 300px;
-            // @media screen and (max-width:480px) {
-            // margin-bottom: 200px;
-            // }
+            
         }
     }
     &__li {
@@ -84,7 +81,7 @@
     }
      
    
-     &__mail {
+    &__mail {
         font-size: 24px;
         line-height: 1.2;
         letter-spacing: 0.02em;
@@ -164,6 +161,7 @@
              height: 40px;
     }
 }
+
 .mobile-socials {
     display: flex;
     justify-content: center;
